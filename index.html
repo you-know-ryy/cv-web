@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV M.Deriyansyah - Frontend Developer">
+  <title>CV Saya</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="icon" href="assets/aic.png" type="image/png">
+</head>
+<body class="bg-blue-200 text-gray-900">
+
+<!-- Header Section: Menampilkan menu navigasi -->
+<header class="bg-gray-200 shadow">
+  <div class="container mx-auto flex justify-between items-center py-4">
+    <div class="hidden md:flex space-x-8 dark:text-black">
+      <!-- Menu untuk desktop -->
+      <a href="index.html" class="hover:bg-gray-200">Tentang</a>
+      <a href="pengalaman.html" class="hover:bg-gray-200">Pengalaman</a>
+      <a href="keahlian.html" class="hover:bg-gray-200">Keahlian</a>
+      <a href="pendidikan.html" class="hover:bg-gray-200">Pendidikan</a>
+    </div>
+    <button id="hamburgerButton" class="md:hidden">
+      <!-- Tombol hamburger untuk tampilan mobile -->
+      <img src="assets/hamburger.png" class="mx-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"></img>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu Section: Tampilan menu saat menggunakan perangkat mobile -->
+<div id="mobileMenu" class="hidden fixed top-8 left-0 right-0 bottom-8 z-10 bg-white">
+  <div class="py-4">
+    <div class="flex justify-end px-4">
+      <!-- Tombol tutup untuk menu mobile -->
+      <button id="closeButton">
+        <img src="assets/close.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"></img>
+      </button>
+    </div>
+    <div class="mt-4 dark:text-black">
+      <!-- Menu navigasi untuk tampilan mobile -->
+      <a href="index.html" class="block py-2 px-4 hover:bg-gray-200">Tentang</a>
+      <a href="pengalaman.html" class="block py-2 px-4 hover:bg-gray-200">Pengalaman</a>
+      <a href="keahlian.html" class="block py-2 px-4 hover:bg-gray-200">Keahlian</a>
+      <a href="pendidikan.html" class="block py-2 px-4 hover:bg-gray-200">Pendidikan</a>
+    </div>
+  </div>
+</div>
+
+<!-- Container Section: Bagian utama CV -->
+<div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10 mb-20">
+  <!-- Header profil -->
+  <div class="flex items-center justify-between mb-6">
+    <div class="flex items-center">
+      <!-- Foto profil -->
+      <img src="assets/deri.jpg" alt="Foto Profil" class="w-30 h-40 rounded-lg mr-4">
+      <div>
+        <h1 class="text-3xl font-bold text-gray-800">M. Deriyansyah</h1>
+        <p class="text-gray-500 text-lg">Frontend Developer</p>
+      </div>
+    </div>
+    <div class="text-right">
+      <p class="text-sm text-gray-500">Tanggal Lahir: 12 Januari 1995</p>
+      <p class="text-sm text-gray-500">Lokasi: Tangerang, Indonesia</p>
+    </div>
+  </div>
+  <hr class="border-gray-200 border-t-2 my-4">
+
+  <!-- Ringkasan Profil -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Tentang Saya</h2>
+    <p class="text-gray-700 leading-relaxed">Saya adalah seorang Frontend Developer dengan pengalaman lebih dari 3 tahun dalam membangun aplikasi web responsif dan interaktif. Saya berfokus pada pengembangan antarmuka pengguna yang intuitif dan meningkatkan pengalaman pengguna.</p>
+  </section>
+
+  <!-- Keahlian -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Keahlian</h2>
+    <ul class="list-disc pl-6 text-gray-700 space-y-2">
+      <li>HTML, TailwindCSS</li>
+    </ul>
+  </section>
+
+  <!-- Pengalaman Kerja -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Pengalaman Kerja</h2>
+    <div class="space-y-4">
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800">Frontend Developer</h3>
+        <p class="text-gray-600">Perusahaan ABC (2022 - Sekarang)</p>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Membangun antarmuka pengguna untuk aplikasi berbasis web menggunakan React.js.</li>
+          <li>Menulis kode yang bersih dan terstruktur dengan baik, mematuhi standar pengembangan modern.</li>
+          <li>Berkolaborasi dengan tim desain untuk implementasi UI/UX.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800">Junior Frontend Developer</h3>
+        <p class="text-gray-600">Perusahaan XYZ (2020 - 2022)</p>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Memperbaiki dan memperbarui antarmuka pengguna aplikasi web menggunakan Vue.js.</li>
+          <li>Membantu tim untuk menyelesaikan bug dan meningkatkan performa aplikasi.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pendidikan -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Pendidikan</h2>
+    <div>
+      <h3 class="text-xl font-semibold text-gray-800">Sarjana Teknik Informatika</h3>
+      <p class="text-gray-600">Universitas ABC (2015 - 2019)</p>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section>
+    <h2 class="text-2xl font-semibold text-gray-800 mb-2">kontak</h2>
+    <ul class="text-gray-700 space-y-2">
+
+      <!-- Ikon Instagram dengan tautan -->
+      <li class="flex items-center space-x-2">
+        <a href="https://www.instagram.com/RyyAic/" class="flex">
+          <img src="assets/instagram.png" class="w-6 h-6">
+          instagram
+        </a>
+      </li>
+      <!-- Ikon Gmail dengan tautan -->
+      <a href="https://mail.google.com/mail/m.deriyansyahit@gmail.com" target="_blank" class="flex">
+        <img src="assets/gmail1.png" class="w-6 h-6"> Gmail
+      </a>
+      
+    </ul>
+  </section>
+</div>
+
+<!-- WhatsApp Button: Tombol WhatsApp yang mengarah ke nomor WhatsApp -->
+<div class="fixed bottom-4 right-4 z-50">
+  <a href="https://wa.me/6289684451898" target="_blank" class="bg-green-400 hover:bg-green-600 px-2 py-2 text-white font-bold rounded-full flex items-center active:scale-90 hover:scale-95 transition transform duration-300 ease-in-out">
+    <img src="assets/whatsapp.png" alt="Ikon WhatsApp" class="w-16 h-16">
+  </a>
+</div>
+
+<!-- Footer Section: Hak cipta -->
+<div class="text-center py-4 bg-gray-200 mt-4">
+  <p class="text-black text-lg">© 2025 M. Deriyansyah. All rights reserved.</p>
+</div>
+
+<script>
+  // untuk membuka dan menutup menu hamburger pada tampilan mobile
+  const hamburgerButton = document.getElementById('hamburgerButton');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeButton = document.getElementById('closeButton');
+
+  // untuk tombol hamburger
+  hamburgerButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden'); 
+  });
+
+  // untuk tombol close pada menu mobile
+  closeButton.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden'); 
+  });
+</script>
+
+</body>
+</html>
